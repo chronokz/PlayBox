@@ -1,0 +1,3 @@
+{
+    videoDirectory: "./videos";
+}

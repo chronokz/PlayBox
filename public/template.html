@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео плеер</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet"> <!-- fontawesome -->
+    <link href="css/player.css" rel="stylesheet">
+</head>
+<body>
+  <div class="player-layout">
+    <div class="player">
+      <video controls id="player">
+        <source id="videoSource" src="" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>      
+    </div>
+    <div class="playlist">
+      <ul id="playlist" class="list-group"></ul>
+    </div>
+    <div class="controls">
+
+    </div>
+    <div class="select">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Source" aria-label="Source" id="source" value="{{ selectedSource }}">
+        <button class="btn btn-outline-secondary" type="button">Get videos</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
